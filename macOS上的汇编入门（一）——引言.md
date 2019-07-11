@@ -11,3 +11,7 @@
 # 这系列文章究竟讲了什么
 
 那么，我打算讲的是在macOS上利用GAS语法，也就是AT&T语法进行x86-64汇编的入门。
+
+# 可以在哪看到这系列文章
+
+我在我的[GitHub](https://github.com/Evian-Zhang/Assembly-on-macOS)上，[知乎专栏](https://zhuanlan.zhihu.com/c_1132336120712765440)上和[CSDN](https://blog.csdn.net/EvianZhang)上同步更新。
