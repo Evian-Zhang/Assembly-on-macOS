@@ -45,3 +45,5 @@ x86-64架构下的CPU中，通用寄存器都是64位，也就是8个字节。�
 我在我的[GitHub](https://github.com/Evian-Zhang/Assembly-on-macOS)上，[知乎专栏](https://zhuanlan.zhihu.com/c_1132336120712765440)上和[CSDN](https://blog.csdn.net/EvianZhang)上同步更新。
 
 上一篇文章：[macOS上的汇编入门（二）——数学基础](macOS上的汇编入门（二）——数学基础.md)
+
+下一篇文章：[macOS上的汇编入门（四）——操作系统基础](macOS上的汇编入门（四）——操作系统基础.md)
