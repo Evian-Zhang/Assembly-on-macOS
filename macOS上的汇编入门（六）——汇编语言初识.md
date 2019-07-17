@@ -122,3 +122,5 @@ echo $?
 我在我的[GitHub](https://github.com/Evian-Zhang/Assembly-on-macOS)上，[知乎专栏](https://zhuanlan.zhihu.com/c_1132336120712765440)上和[CSDN](https://blog.csdn.net/EvianZhang)上同步更新。
 
 上一篇文章：[macOS上的汇编入门（五）——第一个汇编程序](macOS上的汇编入门（五）——第一个汇编程序.md)
+
+下一篇文章：[macOS上的汇编入门（七）——字面量与局部变量](macOS上的汇编入门（七）——字面量与局部变量.md)
