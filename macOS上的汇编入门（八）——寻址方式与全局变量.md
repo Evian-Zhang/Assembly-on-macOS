@@ -4,7 +4,7 @@
 
 所谓寻址方式，就是已知地址如何获得该地址对应的内存单元内的值。在上一篇文章中，我们实质已经用到了寻址方式。比如说，已知栈顶的地址存储在rsp内，那么我们是通过`(%rsp)`获得对应位置的内存单元的值的。一般来说，我们寻址方式需要记得下图：
 
-![addressing](macOS上的汇编入门（八）——寻址方式与全局变量/addressing.png)
+![addressing](macOS上的汇编入门（八）——寻址方式与全局变量.assets/addressing.png)
 
 这个记号代表地址为`基址+指标*倍数+偏移量`处的内存单元中存储的**值**。
 
@@ -66,7 +66,7 @@ otool -v -s __DATA __data test
 
 来查看`test`的`__DATA`段`__data`节的数据如下：
 
-![quad](macOS上的汇编入门（八）——寻址方式与全局变量/quad.png)
+![quad](macOS上的汇编入门（八）——寻址方式与全局变量.assets/quad.png)
 
 由此可以看到，汇编器把它整个8个字节的高位都清零了。
 
@@ -79,11 +79,11 @@ otool -v -s __DATA __data test
 
 就代表`.quad`后面所有的数，都占有8个字节。其效果为：
 
-![quad3](macOS上的汇编入门（八）——寻址方式与全局变量/quad3.png)
+![quad3](macOS上的汇编入门（八）——寻址方式与全局变量.assets/quad3.png)
 
 我们需要注意的是，这些数是“紧挨”在一起的。比如说，我如果把`.quad`改为`.long`, 也就是这三个数每个都是占4个字节，那么效果就变成了
 
-![long3](macOS上的汇编入门（八）——寻址方式与全局变量/long3.png)
+![long3](macOS上的汇编入门（八）——寻址方式与全局变量.assets/long3.png)
 
 这样完成以后，又有一个新的问题出现了，我们在代码中怎样能访问到这些数据呢？
 
@@ -120,7 +120,7 @@ as dataTest.s -o dataTest.o
 
 结果报错了！
 
-![error](macOS上的汇编入门（八）——寻址方式与全局变量/error.png)
+![error](macOS上的汇编入门（八）——寻址方式与全局变量.assets/error.png)
 
 "32-bit absolute addressing is not supported in 64-bit mode". 这是为什么呢？
 
@@ -144,7 +144,7 @@ _main:
 
 我们对这个程序汇编、链接之后得到可执行文件`dataTest`. 我们分别查看其`__Data`段`__data`节和`__TEXT`段`__text`节如下：
 
-![rip](macOS上的汇编入门（八）——寻址方式与全局变量/rip.png)
+![rip](macOS上的汇编入门（八）——寻址方式与全局变量.assets/rip.png)
 
 可以看出，我们要访问的数`0x114514`的逻辑地址是`0x0000000100001000`, 而`movq	a(%rip), %rax`的地址是`0x0000000100000fb0`, 下一条指令地址是`0x0000000100000fb7`. 因此，当程序在执行`movq	a(%rip), %rax`时，rip寄存器中的值是下一条指令地址，而其与我们要访问的数的逻辑地址之间的距离恰好是`0x49`. 因此，`0x49(%rip)`无论在汇编时还是在执行时，都会对应于我们要访问的数。
 
