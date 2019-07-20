@@ -141,3 +141,5 @@ echo $?
 我在我的[GitHub](https://github.com/Evian-Zhang/Assembly-on-macOS)上，[知乎专栏](https://zhuanlan.zhihu.com/c_1132336120712765440)上和[CSDN](https://blog.csdn.net/EvianZhang)上同步更新。
 
 上一篇文章：[macOS上的汇编入门（八）——寻址方式与全局变量](macOS上的汇编入门（八）——寻址方式与全局变量.md)
+
+下一篇文章：[macOS上的汇编入门（十）——再探函数](macOS上的汇编入门（十）——再探函数.md)
