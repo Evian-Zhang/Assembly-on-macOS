@@ -1,4 +1,6 @@
-随着我们编写的汇编程序越来越复杂，往往就需要调试。对于汇编语言而言，常见的调试器有LLDB和GDB. 由于我比较喜欢用LLVM系列的产品，因此，在这篇文章中我主要介绍的是LLDB来调试汇编语言的方法。同时，在新版本的macOS上使用GDB是一件比较麻烦的事，需要证书签名。关于使用方法请参见我之前的文章[在macOS10.14上使用GDB教程](https://evian-zhang.github.io/articles/macOS/在macOS10.14上使用GDB教程/在macOS10.14上使用GDB教程.html)。
+随着我们编写的汇编程序越来越复杂，往往就需要调试。对于汇编语言而言，常见的调试器有LLDB和GDB. 由于我比较喜欢用LLVM系列的产品，因此，在这篇文章中我主要介绍的是LLDB来调试汇编语言的方法。关于详细的LLDB的使用方法，大家可去官网[lldb.llvm.org](https://lldb.llvm.org/index.html)查看。
+
+同时，在新版本的macOS上使用GDB是一件比较麻烦的事，需要证书签名。关于使用方法请参见我之前的文章[在macOS10.14上使用GDB教程](https://evian-zhang.github.io/articles/macOS/在macOS10.14上使用GDB教程/在macOS10.14上使用GDB教程.html)。
 
 为了演示LLDB的调试，我们首先有一个汇编程序`test.s`:
 
