@@ -208,3 +208,5 @@ General Purpose Registers:
 我在我的[GitHub](https://github.com/Evian-Zhang/Assembly-on-macOS)上，[知乎专栏](https://zhuanlan.zhihu.com/c_1132336120712765440)上和[CSDN](https://blog.csdn.net/EvianZhang)上同步更新。
 
 上一篇文章：[macOS上的汇编入门（十一）——系统调用](macOS上的汇编入门（十一）——系统调用.md)
+
+下一篇文章：[macOS上的汇编入门（十三）——从编译到执行](macOS上的汇编入门（十三）——从编译到执行.md)
