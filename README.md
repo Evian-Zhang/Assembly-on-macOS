@@ -2,6 +2,8 @@
 
 这一系列文章的目标群体是使用macOS系统的，希望入门汇编语言的人群。
 
+本系列针对的是Intel CPU的amd64架构的macOS。对于使用Apple Silicon的Mac（如M1 Mac等），请参考我写的另一系列[在Apple Silicon Mac上入门汇编语言](https://github.com/Evian-Zhang/learn-assembly-on-Apple-Silicon-Mac)。
+
 ## 目录
 
 * [macOS上的汇编入门（一）——引言](macOS上的汇编入门（一）——引言.md)
